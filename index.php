@@ -15,8 +15,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <nav class="navbar navbar-expand-lg navbar-light bg-dark ">
         <div class="container-fluid">
-            <a class="navbar-brand " href="#">LOGO</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand text-light " href="#">LOGO</a>
+            <button class="navbar-toggler bg-info" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse " id="navbarNavDropdown">
@@ -24,20 +24,45 @@
                     <li class="nav-item">
                         <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Pricing</a>
+                   
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Departments
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Applied Sciences</a></li>
+                            <li><a class="dropdown-item" href="#">Information Technology</a></li>
+                            <li><a class="dropdown-item" href="#">Mechanical Engineering</a></li>
+                            <li><a class="dropdown-item" href="#">Civil Engineering</a></li>
+                            <li><a class="dropdown-item" href="#"> Computer science</a></li>
+                            <li><a class="dropdown-item" href="#"> Electrical Engineering</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown link
+                           Acadmics
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Applied Sciences</a></li>
+                            <li><a class="dropdown-item" href="#">Information Technology</a></li>
+                            <li><a class="dropdown-item" href="#">Mechanical Engineering</a></li>
+                            <li><a class="dropdown-item" href="#">Civil Engineering</a></li>
+                            <li><a class="dropdown-item" href="#"> Computer science</a></li>
+                            <li><a class="dropdown-item" href="#"> Electrical Engineering</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Acadmic Facilities</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us 
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Help</a></li>
+                            <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                            <li><a class="dropdown-item" href="#">Student Activities</a></li>
+                            <li><a class="dropdown-item" href="#"></a></li>
                         </ul>
                     </li>
                 </ul>
@@ -73,7 +98,7 @@
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
                             <label class="form-check-label" for="exampleCheck1">Check me out</label>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-dark">Submit</button>
                     </form>
                 </div>
 
