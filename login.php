@@ -82,7 +82,7 @@ include 'partials/_db_connect.php';
 
   </div>
 
-
+  <?php require 'partials/_footer.php' ?>
 
 
 

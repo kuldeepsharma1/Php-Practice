@@ -111,7 +111,7 @@ include 'partials/_db_connect.php';
             </form>
         </div>
 
-
+        <?php require 'partials/_footer.php' ?>
 
 
 
