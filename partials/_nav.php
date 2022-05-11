@@ -16,12 +16,12 @@
                     Departments
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="#">Applied Sciences</a></li>
-                    <li><a class="dropdown-item" href="#">Information Technology</a></li>
-                    <li><a class="dropdown-item" href="#">Mechanical Engineering</a></li>
-                    <li><a class="dropdown-item" href="#">Civil Engineering</a></li>
-                    <li><a class="dropdown-item" href="#"> Computer science</a></li>
-                    <li><a class="dropdown-item" href="#"> Electrical Engineering</a></li>
+                    <li><a class="dropdown-item" href="/php-practice/info_dipartment.php">Applied Sciences</a></li>
+                    <li><a class="dropdown-item" href="/php-practice/info_dipartment.php">Information Technology</a></li>
+                    <li><a class="dropdown-item" href="/php-practice/info_dipartment.php">Mechanical Engineering</a></li>
+                    <li><a class="dropdown-item" href="/php-practice/info_dipartment.php">Civil Engineering</a></li>
+                    <li><a class="dropdown-item" href="/php-practice/info_dipartment.php"> Computer science</a></li>
+                    <li><a class="dropdown-item" href="/php-practice/info_dipartment.php"> Electrical Engineering</a></li>
                 </ul>
             </li>
             <li class="nav-item dropdown">
@@ -48,8 +48,8 @@
                     About Us
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="#">Help</a></li>
-                    <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                    <li><a class="dropdown-item" href="/php-practice/help.php">Help</a></li>
+                    <li><a class="dropdown-item" href="/php-practice/help.php">Contact Us</a></li>
                     <li><a class="dropdown-item" href="#">Student Activities</a></li>
                     <li><a class="dropdown-item" href="#"></a></li>
                 </ul>

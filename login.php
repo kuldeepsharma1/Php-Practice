@@ -10,6 +10,7 @@ include 'partials/_db_connect.php';
         $sql= "Select * from users where username='$username' AND password='$password'";
         $result = mysqli_query($conn ,$sql);
         $num = mysqli_num_rows($result);
+
         if($num == 1){
             $login = true;
         }
@@ -60,7 +61,12 @@ include 'partials/_db_connect.php';
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>';}
         ?>
-    <div class="mb-3 col-md-6">
+        
+        <div class="alert alert-success alert-dismissible fade show" role="info">
+            <strong>Sucess</strong> Your are logged in
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div> 
+    <div class="mb-4 col-md-6">
       <label for="username" class="form-label">Email address</label>
       <input type="text" class="form-control" id="username" name="username" aria-describedby="emailHelp">
       <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
