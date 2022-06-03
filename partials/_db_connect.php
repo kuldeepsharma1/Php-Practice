@@ -17,3 +17,10 @@ if (!$conn){
 }
 
 ?>
+<!--
+  How to configure database
+
+  create a databse 
+   create a sign up form 
+   login form
+ -->
