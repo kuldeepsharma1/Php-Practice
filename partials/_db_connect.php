@@ -12,7 +12,7 @@ if (!$conn){
    // echo "sucess";
 
 
-     die( "Error". mysqli_connect_error());
+     die( "Error".mysqli_connect_error());
    
 }
 
