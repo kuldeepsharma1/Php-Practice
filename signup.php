@@ -1,36 +1,36 @@
 <?php
-  $err = false;
-  $showError =false;
-if($_SERVER["REQUEST_METHOD"] == "POST"){
-  
-include 'partials/_db_connect.php';
-    $username =$_POST["username"];
-    $password =$_POST["password"];
-    $cpassword =$_POST["cpassword"];
-   
+$err = false;
+$showError = false;
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    include 'partials/_db_connect.php';
+    $name = $_POST["name"];
+    $username = $_POST["username"];
+    $number = $_POST["number"];
+    $password = $_POST["password"];
+    $cpassword = $_POST["cpassword"];
+
     //check whether user is exist or not
-    $existSql ="SELECT * FROM `users`where username='$username'";
-    $result = mysqli_query($conn,$existSql);
+    $existSql = "SELECT * FROM `users`where username='$username'";
+    $result = mysqli_query($conn, $existSql);
     $numExistRows = mysqli_num_rows($result);
-    if($numExistRows > 0){
+    if ($numExistRows > 0) {
         $showError = " Account Already Existed";
-    }else{
+    } else {
 
 
 
 
-        if($password == $cpassword ){
-        $sql= "INSERT INTO `users` ( `username`, `password`, `date`) VALUES ( '$username', '$password', current_timestamp())";
-        $result = mysqli_query($conn ,$sql);
-        if($result){
-            $err =true;
+        if ($password == $cpassword) {
+            $sql = "INSERT INTO `users` (`name`, `username`,`number`, `password`, `date`) VALUES ( '$name', '$username', '$number','$password', current_timestamp())";
+            $result = mysqli_query($conn, $sql);
+            if ($result) {
+                $err = true;
+            }
+        } else {
+            $showError = "Passwords do not Match ";
         }
-         }else{
-        $showError = "Passwords do not Match ";
     }
-
-    }
-
 }
 
 
@@ -67,48 +67,62 @@ include 'partials/_db_connect.php';
     <body>
         <!-- This include the nav bar   -->
         <?php require  'partials/_nav.php' ?>
-        <?php 
-        if($err){
-       echo  ' <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <?php
+        if ($err) {
+            echo  ' <div class="alert alert-success alert-dismissible fade show" role="alert">
             <strong>Sucess</strong> Your Account is created sucessfully and You can log in now
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>';}
-        if($showError){
+        </div>';
+        }
+        if ($showError) {
             echo  ' <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                 <strong>Sucess</strong> '.$showError.'
+                 <strong>Sucess</strong> ' . $showError . '
                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-             </div>';}
-           
-      
+             </div>';
+        }
+
+
         ?>
 
         <div class="container my-4">
             <h1 class="text-center">signup to our Website</h1>
 
+            <div class="container">
+                <form action="/php-practice/signup.php" method="post">
 
-            <form action="/php-practice/signup.php" method="post">
-                <div class="mb-3 col-md-6">
-                    <label for="username" class="form-label">Email address</label>
-                    <input type="text" class="form-control" id="username" name="username" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                </div>
-                <div class="mb-3 col-md-6">
-                    <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="password" name="password">
-                    <div id="emailHelp" class="form-text">Create strong Password</div>
-                </div>
-                <div class="mb-3 col-md-6">
-                    <label for="cpassword" class="form-label">Confirm Password</label>
-                    <input type="password" class="form-control" id="cpassword" name="cpassword">
-                    <div id="emailHelp" class="form-text">Make sure to type same password</div>
-                </div>
-                <!-- <div class="mb-3 form-check">
+                    <div class="mb-3 col-md-6">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+
+                    </div>
+                    <div class="mb-3 col-md-6">
+                        <label for="username" class="form-label">Email address</label>
+                        <input type="text" class="form-control" id="username" name="username" aria-describedby="emailHelp"required>
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3 col-md-6">
+                        <label for="number" class="form-label">Contact NO</label>
+                        <input type="tel" class="form-control" id="namber" name="number"required>
+
+                    </div>
+                    <div class="mb-3 col-md-6">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" name="password"required>
+                        <div id="emailHelp" class="form-text">Create strong Password</div>
+                    </div>
+                    <div class="mb-3 col-md-6">
+                        <label for="cpassword" class="form-label">Confirm Password</label>
+                        <input type="password" class="form-control" id="cpassword" name="cpassword"required>
+                        <div id="emailHelp" class="form-text">Make sure to type same password</div>
+                    </div>
+                    <!-- <div class="mb-3 form-check">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
                     <label class="form-check-label" for="exampleCheck1">Check me out</label>
                 </div> -->
-                <button type="submit" class="btn btn-primary">Sign Up</button>
-                <button type="reset" class="btn btn-secondary">Reset</button>
-            </form>
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                    <button type="reset" class="btn btn-secondary">Reset</button>
+                </form>
+            </div>
         </div>
 
         <?php require 'partials/_footer.php' ?>

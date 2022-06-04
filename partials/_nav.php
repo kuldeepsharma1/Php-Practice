@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-dark ">
 
 <div class="container-fluid">
-    <a class="navbar-brand text-light " href="#">LOGO</a>
+    <a class="navbar-brand text-light " href="#">GPH</a>
     <button class="navbar-toggler bg-info" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
