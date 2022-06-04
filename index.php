@@ -21,7 +21,7 @@
 
     <?php require 'partials/_carousel.php' ?>
 
-   
+    <a href="/php-practice/exam_registration.php">exam form</a>
 
 
     <!-- footer start -->
