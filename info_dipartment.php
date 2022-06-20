@@ -57,7 +57,7 @@ tr:nth-child(even) {
     <td>10 yr</td>
     <td>Computer Science</td>
     <td>Teaching</td>
-    <td><button  class="btn btn-primary"><a class="text-light" href="https://cs50.harvard.edu/college/2022/spring/">lesson Plan</a></button></td>
+    <td><button  class="btn btn-primary"><a style="text-decoration: none;" class="text-light" href="https://cs50.harvard.edu/college/2022/spring/">lesson Plan</a></button></td>
   </tr>
  
   <tr>
