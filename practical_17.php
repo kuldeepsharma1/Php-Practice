@@ -1,9 +1,9 @@
 <?php
-
+//create user table 
 $host = "localhost";
 $user = "root";
 $password ="";
-$database = "test_db";
+$database = "user1963";
 
 $id = "";
 $fname = "";
@@ -36,7 +36,7 @@ if(isset($_POST['search']))
 {
     $data = getPosts();
     
-    $search_Query = "SELECT * FROM users WHERE id = $data[0]";
+    $search_Query = "SELECT * FROM user WHERE id = $data[0]";
     
     $search_Result = mysqli_query($connect, $search_Query);
     
@@ -64,7 +64,7 @@ if(isset($_POST['search']))
 if(isset($_POST['insert']))
 {
     $data = getPosts();
-    $insert_Query = "INSERT INTO `users`(`fname`, `lname`, `age`) VALUES ('$data[1]','$data[2]',$data[3])";
+    $insert_Query = "INSERT INTO `user`(`fname`, `lname`, `age`) VALUES ('$data[1]','$data[2]',$data[3])";
     try{
         $insert_Result = mysqli_query($connect, $insert_Query);
         
@@ -108,7 +108,7 @@ if(isset($_POST['delete']))
 if(isset($_POST['update']))
 {
     $data = getPosts();
-    $update_Query = "UPDATE `users` SET `fname`='$data[1]',`lname`='$data[2]',`age`=$data[3] WHERE `id` = $data[0]";
+    $update_Query = "UPDATE `user` SET `fname`='$data[1]',`lname`='$data[2]',`age`=$data[3] WHERE `id` = $data[0]";
     try{
         $update_Result = mysqli_query($connect, $update_Query);
         
@@ -137,7 +137,7 @@ if(isset($_POST['update']))
         <title>PHP INSERT UPDATE DELETE SEARCH</title>
     </head>
     <body>
-        <form action="php_insert_update_delete_search.php" method="post">
+        <form action="practical_17.php" method="post">
             <input type="number" name="id" placeholder="Id" value="<?php echo $id;?>"><br><br>
             <input type="text" name="fname" placeholder="First Name" value="<?php echo $fname;?>"><br><br>
             <input type="text" name="lname" placeholder="Last Name" value="<?php echo $lname;?>"><br><br>
