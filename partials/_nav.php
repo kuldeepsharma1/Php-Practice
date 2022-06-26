@@ -41,7 +41,7 @@
                 <a class="nav-link text-light" href="#">Acadmic Facilities</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-light" href="#">Campus Tour</a>
+                <a class="nav-link text-light" href="campusTour.php">Campus Tour</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -61,10 +61,12 @@
         <button class="btn btn-outline-success text-light" type="submit">Search</button>
     </form>
     <li class="nav-item">
-                <a class="nav-link text-light" href="/php-practice/login.php">Log In</a>
+        <button  style="padding:1px;"type="button" class="btn btn-primary"><a class="nav-link text-light" href="/php-practice/login.php">Log In</a></button>
+                
             </li>
             <li class="nav-item">
-                <a class="nav-link text-light" href="/php-practice/signup.php">Sign Up</a>
+            <button  style="padding:1px;"type="button" class="btn btn-success"><a class="nav-link text-light" href="/php-practice/signup.php">Sign Up</a></button>
+
             </li>
             <li class="nav-item">
                 <a class="nav-link text-light" href="/php-practice/log_out.php">Logout</a>

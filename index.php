@@ -18,8 +18,8 @@
 
     <!-- This include the nav bar   -->
     <?php require  'partials/_nav.php' ?>
-
-    <?php require 'partials/_carousel.php' ?>
+<div class="container"><?php require 'partials/_carousel.php' ?></div>
+    
 
     <a href="/php-practice/exam_registration.php">exam form</a>
 

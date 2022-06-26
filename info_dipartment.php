@@ -29,7 +29,7 @@ td, th {
 }
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+  
 }
 </style>
 </head>
@@ -57,18 +57,18 @@ tr:nth-child(even) {
     <td>10 yr</td>
     <td>Computer Science</td>
     <td>Teaching</td>
-    <td><button  class="btn btn-primary"><a style="text-decoration: none;" class="text-light" href="https://cs50.harvard.edu/college/2022/spring/">lesson Plan</a></button></td>
+    <td><button  class="btn btn-primary"><a style="text-decoration: none;" class="text-light" href="https://cs.harvard.edu/malan/">About Me</a></button></td>
   </tr>
  
   <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-    <td>Germany</td>
-    <td>Germany</td>
-    <td>Germany</td>
-    <td>Germany</td>
-    <td>Germany</td>
+    <td>2</td>
+    <td>Andrew NG</td>
+    <td>Computer Scientist</td>
+    <td>Phd</td>
+    <td>15year</td>
+    <td>Artificial intelligence</td>
+    <td>Teaching</td>
+    <td><button  class="btn btn-primary"><a style="text-decoration: none;" class="text-light" href="https://www.andrewng.org/">About Me</a></button></td>
   </tr>
   <tr>
     <td>Alfreds Futterkiste</td>
