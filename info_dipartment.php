@@ -14,9 +14,9 @@
     <title>Information Technology</title>
     <style>
 table {
-  font-family: arial, sans-serif;
+  
   border-collapse: collapse;
-  width: 100%;
+ width: 100%;
 
 }
 th{
@@ -26,28 +26,25 @@ td, th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
-}
+} 
 
-tr:nth-child(even) {
-  
-}
 </style>
 </head>
 
 <body>
      <!-- This include the nav bar   -->
      <?php require  'partials/_nav.php' ?>
-<div class="container mt-4">
-<table>
+     <div class="container table-responsive mt-4 mb-4">
+<table class="table">
   <tr>
-    <th>Sr No</th>
-    <th>Name</th>
-    <th>Designation</th>
-    <th>Qualification</th>
-    <th>Experience</th>
-    <th>Branch</th>
-    <th>Teaching/ Non-Teaching</th>
-    <th>Lesson Plan</th>
+    <th scope="col">Sr No</th>
+    <th scope="col">Name</th>
+    <th scope="col">Designation</th>
+    <th scope="col">Qualification</th>
+    <th scope="col">Experience</th>
+    <th scope="col">Branch</th>
+    <th scope="col">Teaching/ Non-Teaching</th>
+    <th scope="col">Lesson Plan</th>
   </tr>
   <tr>
     <td>1</td>
@@ -134,7 +131,7 @@ tr:nth-child(even) {
 </div>
 
 
-     <div class="container"><?php require 'partials/_footer.php' ?></div>
+<?php require 'partials/_footer.php' ?>
 
 
 

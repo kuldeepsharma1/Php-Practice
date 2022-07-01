@@ -91,7 +91,7 @@ include 'partials/_db_connect.php';
 
   </div>
 
-  <div class="container"><?php require 'partials/_footer.php' ?></div>
+  <?php require 'partials/_footer.php' ?>
 
 
 

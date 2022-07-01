@@ -44,13 +44,13 @@
                 <a class="nav-link text-light" href="campusTour.php">Campus Tour</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle text-light" href="/Php-Practice/about.php" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     About Us
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <li><a class="dropdown-item" href="/php-practice/help.php">Help</a></li>
                     <li><a class="dropdown-item" href="/php-practice/help.php">Contact Us</a></li>
-                    <li><a class="dropdown-item" href="#">Student Activities</a></li>
+                    <li><a class="dropdown-item" href="/Php-Practice/about.php">Student Activities</a></li>
                     <li><a class="dropdown-item" href="#"></a></li>
                 </ul>
             </li>

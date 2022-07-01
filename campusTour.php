@@ -148,14 +148,14 @@ h1 {
 <!-- END MAIN -->
 </div>
 
+<div class="container pb-5"></div>
 
 
 
 
 
 
-
-  <div class="container"><?php require 'partials/_footer.php' ?></div>
+<?php require 'partials/_footer.php' ?>
 
 
   <!-- Optional JavaScript; choose one of the two! -->

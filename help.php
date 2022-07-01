@@ -129,7 +129,7 @@
 
 
 
-<div class="container"><?php require 'partials/_footer.php' ?></div>
+<?php require 'partials/_footer.php' ?>
 
 
 
