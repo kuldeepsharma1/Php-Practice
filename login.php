@@ -1,4 +1,4 @@
-<?php
+?php
   $login = false;
   $showError = false;
 if($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -25,7 +25,7 @@ include 'partials/_db_connect.php';
 
 ?>
 
-
+</html>
 
 
 
