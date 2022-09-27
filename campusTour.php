@@ -1,161 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Bootstrap CSS -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat:400,600" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <!-- <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/> -->
+
+  <!-- Font Awesome Icon -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+
+  <!-- Custom stlylesheet -->
+  <link type="text/css" rel="stylesheet" href="css/style.css" />
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <style>
-* {
-  box-sizing: border-box;
-}
+    * {
+      box-sizing: border-box;
+    }
 
-body {
-  background-color: #f1f1f1;
-  
-  font-family: Arial;
-}
+    body {
+      background-color: #f1f1f1;
+
+     
+    }
 
 
 
-h1 {
-  font-size: 50px;
-  word-break: break-all;
-}
+    h1 {
+      font-size: 50px;
+      word-break: break-all;
+    }
 
-.row {
-  margin: 8px -16px;
-}
+    .row {
+      margin: 8px -16px;
+    }
 
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-  padding: 8px;
-}
+    /* Add padding BETWEEN each column */
+    .row,
+    .row>.column {
+      padding: 8px;
+    }
 
-/* Create four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
-}
+    /* Create four equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 25%;
+    }
 
-/* Clear floats after rows */ 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+    /* Clear floats after rows */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
 
-/* Content */
-.content {
-  background-color: white;
-  padding: 10px;
-}
+    /* Content */
+    .content {
+      background-color: white;
+      padding: 10px;
+    }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
-  }
-}
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 900px) {
+      .column {
+        width: 50%;
+      }
+    }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-</style>
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+    }
+  </style>
 
 </head>
+
 <body>
-     <!-- This include the nav bar   -->
+  <!-- This include the nav bar   -->
   <?php require  'partials/_nav.php' ?>
-<div class="container">
+  <div class="container">
 
 
 
 
-<h1>Collage Campus Tour</h1>
-<hr>
+    <h1>Collage Campus Tour</h1>
+    <hr>
 
-<h2>....</h2>
-<p>Resize the browser window to see the responsive effect.</p>
+    <h2>....</h2>
+    <p>Resize the browser window to see the responsive effect.</p>
 
-<!-- Portfolio Gallery Grid -->
-<div class="row">
-  <div class="column">
-    <div class="content">
-      <img src="1.png" alt="Mountains" style="width:100%">
-      <h3>Electrical Engg</h3>
-      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
-        <button type="button" class="btn btn-primary">Take Tour</button>
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column">
+        <div class="content">
+          <img src="1.png" alt="Mountains" style="width:100%">
+          <h3>Electrical Engg</h3>
+          <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+          <button type="button" class="btn btn-primary">Take Tour</button>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="1.png" alt="Mountains" style="width:100%">
+          <h3>Mechanical Engg</h3>
+          <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+          <button type="button" class="btn btn-primary">Take Tour</button>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="1.png" alt="Mountains" style="width:100%">
+          <h3>Applied Science</h3>
+          <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+          <button type="button" class="btn btn-primary">Take Tour</button>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="1.png" alt="Lights" style="width:100%">
+          <h3>Civil Engg</h3>
+          <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+          <button type="button" class="btn btn-primary">Take Tour</button>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="1.png" alt="Nature" style="width:100%">
+          <h3>Computer science</h3>
+          <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+          <button type="button" class="btn btn-primary">Take Tour</button>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="1.png" alt="Mountains" style="width:100%">
+          <h3>Information Technology</h3>
+          <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+          <button type="button" class="btn btn-primary">Take Tour</button>
+        </div>
+      </div>
+      <!-- END GRID -->
     </div>
+
+    <div class="content">
+      <img src="1.png" alt="Bear" style="width:100%">
+      <h3>Coming Soon!!!</h3>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+      <button type="button" class="btn btn-success">view Events </button>
+    </div>
+
+    <!-- END MAIN -->
   </div>
-  <div class="column">
-    <div class="content">
-      <img src="1.png" alt="Mountains" style="width:100%">
-      <h3>Mechanical Engg</h3>
-      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
-    <button type="button" class="btn btn-primary">Take Tour</button>
-    </div>
-</div>
-    <div class="column">
-    <div class="content">
-      <img src="1.png" alt="Mountains" style="width:100%">
-      <h3>Applied Science</h3>
-      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
-    <button type="button" class="btn btn-primary">Take Tour</button>
-    </div>
-    </div>
-  <div class="column">
-    <div class="content">
-    <img src="1.png" alt="Lights" style="width:100%">
-      <h3>Civil Engg</h3>
-      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
-    <button type="button" class="btn btn-primary">Take Tour</button>
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-    <img src="1.png" alt="Nature" style="width:100%">
-      <h3>Computer science</h3>
-      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
-    <button type="button" class="btn btn-primary">Take Tour</button>
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-    <img src="1.png" alt="Mountains" style="width:100%">
-      <h3>Information Technology</h3>
-      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
-    <button type="button" class="btn btn-primary">Take Tour</button>
-    </div>
-  </div>
-<!-- END GRID -->
-</div>
 
-<div class="content">
-  <img src="1.png" alt="Bear" style="width:100%">
-  <h3>Coming Soon!!!</h3>
-  <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
-  <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
-  <button type="button" class="btn btn-success">view Events </button>
-</div>
-
-<!-- END MAIN -->
-</div>
-
-<div class="container pb-5"></div>
+  <div class="container pb-5"></div>
 
 
 
 
 
 
-<?php require 'partials/_footer.php' ?>
+  <?php require 'partials/_footer.php' ?>
 
 
   <!-- Optional JavaScript; choose one of the two! -->
@@ -168,5 +181,13 @@ h1 {
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
+
+  <!-- jQuery Plugins -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+  <script type="text/javascript" src="js/google-map.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
+
 </html>

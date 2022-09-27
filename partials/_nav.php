@@ -38,7 +38,7 @@
                 </ul>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-light" href="#">Acadmic Facilities</a>
+                <a class="nav-link text-light" href="/Php-Practice/acadmics.php">Acadmic Facilities</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link text-light" href="campusTour.php">Campus Tour</a>
